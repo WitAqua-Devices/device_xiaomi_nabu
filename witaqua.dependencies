@@ -5,6 +5,7 @@
   },
   {
     "repository": "kernel_xiaomi_nabu",
-    "target_path": "kernel/xiaomi/nabu"
+    "target_path": "kernel/xiaomi/nabu",
+    "branch": "16.0/NO_KSU"
   }
 ]
