@@ -11,7 +11,7 @@ persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 ro.audio.recording.hd=true
 ro.qc.sdk.audio.fluencetype=none
 ro.qc.sdk.audio.ssr=false
-tunnel.audio.encode = true
+tunnel.audio.encode=true
 use.voice.path.for.pcm.voip=true
 
 # radio
@@ -21,4 +21,4 @@ ro.radio.noril=true
 ro.odm.build.media_performance_class=30
 
 # eBPF
-ro.bpf.kver_override=5.4.186
+ro.bpf.kver_override=5.4.299

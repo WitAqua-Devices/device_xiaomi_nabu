@@ -24,8 +24,9 @@ DEVICE_CODENAME := nabu
 # Inherit device configuration for nabu.
 $(call inherit-product, device/xiaomi/nabu/device.mk)
 
-# crDroid build flag
+# crDroid build flags
 TARGET_ENABLE_BLUR := true
+TARGET_DISABLE_MATLOG := true
 
 PRODUCT_NAME := lineage_$(DEVICE_CODENAME)
 PRODUCT_DEVICE := nabu
