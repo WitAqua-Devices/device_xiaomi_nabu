@@ -4,8 +4,8 @@
     "target_path": "hardware/xiaomi"
   },
   {
-    "repository": "kernel_xiaomi_nabu",
-    "target_path": "kernel/xiaomi/nabu",
-    "branch": "16.0/NO_KSU"
+    "repository": "android_kernel_xiaomi_sm8150",
+    "target_path": "kernel/xiaomi/sm8150",
+    "branch": "16.2"
   }
 ]
