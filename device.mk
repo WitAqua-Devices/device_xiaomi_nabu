@@ -84,6 +84,10 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.verified_boot.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.verified_boot.xml \
     $(LOCAL_PATH)/configs/android-removed-permissions.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android-removed-permissions.xml
 
+# Add external hardware midi support
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/configs/android.hardware.midi.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.midi.xml
+
 # Device is a Tablet
 PRODUCT_CHARACTERISTICS := tablet,nosdcard
 TARGET_SCREEN_HEIGHT := 2560
@@ -178,8 +182,7 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider@2.4-impl \
-    android.hardware.camera.provider@2.4-service_64
+    android.hardware.camera.provider-service.lineage
 
 PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
@@ -277,6 +280,7 @@ PRODUCT_PACKAGES += \
 # Health
 PRODUCT_PACKAGES += \
     android.hardware.health-service.qti \
+    android.hardware.health-service.qti_recovery \
     android.hardware.health@2.1.vendor
 
 # HIDL
