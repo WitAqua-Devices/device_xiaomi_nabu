@@ -21,6 +21,14 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 DEVICE_CODENAME := nabu
 
+# Device info, for the banner in Settings. The camera figures are the two
+# sensors the vendor blobs carry a module for: ov13b10 at the back, ov8856 at
+# the front. SM8150-AC is sold as the Snapdragon 860, so ro.soc.model does not
+# say it.
+PROCESSOR_INFO := Qualcomm Snapdragon 860
+CAMERA_REAR_INFO := 13
+CAMERA_FRONT_INFO := 8
+
 # Inherit device configuration for nabu.
 $(call inherit-product, device/xiaomi/nabu/device.mk)
 
