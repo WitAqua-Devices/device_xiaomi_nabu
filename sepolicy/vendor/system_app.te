@@ -1,0 +1,6 @@
+# QcomPdInfo reads what the charger offered and what the port took. Both come
+# out of the qualcomm power delivery driver's own nodes, so the type is
+# vendor's while the reader is a system app.
+allow system_app vendor_sysfs_usbpd_device:dir r_dir_perms;
+allow system_app vendor_sysfs_usbpd_device:lnk_file r_file_perms;
+allow system_app vendor_sysfs_usbpd_device:file r_file_perms;

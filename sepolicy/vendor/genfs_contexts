@@ -52,6 +52,9 @@ genfscon sysfs /devices/platform/soc/1d84000.ufshc/clkgate_enable               
 # Ultrasound devices
 genfscon sysfs /devices/platform/us_prox.0/iio:device                                               u:object_r:sysfs_ultrasound:s0
 
+# USB Power Delivery
+genfscon sysfs /class/usbpd                                                                         u:object_r:vendor_sysfs_usbpd_device:s0
+
 # Wakeup source stats
 genfscon sysfs /devices/0306_02.01.00/wakeup                                                                                                       u:object_r:sysfs_wakeup:s0
 genfscon sysfs /devices/platform/goodix_ts.0/wakeup                                                                                                u:object_r:sysfs_wakeup:s0
